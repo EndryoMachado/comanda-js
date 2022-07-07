@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Sistema de Lanchonete</title>
+</head>
+<body>
+    <form action="">
+        <h1>Comanda do Cliente:</h1>
+        <table border="1px">
+                <tr>
+                    <th>#</th>
+                    <th>Descrição</th>
+                    <th>Qtd</th>
+                    <th>Preço</th>
+                    <th>Subtotal</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>
+                        <select name="comida">
+                            <option value=""></option>
+                            <option value="Cachorro Quente">Cachorro Quente</option>
+                            <option value="X-Tudo">X-Tudo</option>
+                            <option value="Hamburguer">Hamburguer</option>
+                            <option value="Batata Frita">Batata Frita</option>
+                            <option value="Refrigerante">Refrigerante</option>
+                            <option value="Pizza">Pizza</option>
+                        </select>
+                    </td>
+                    <td><input onblur="subtotal(qtd1.id, preco1.id, subtotal1.id)" type="number" min="0" id="qtd1" value=""></td>
+                    <td><input onblur="subtotal(qtd1.id, preco1.id, subtotal1.id)" type="number" min="0" id="preco1" value=""></td>
+        
+                    <td><input type="number" disabled id="subtotal1"></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>
+                        <select name="comida">
+                            <option value=""></option>
+                            <option value="Cachorro Quente">Cachorro Quente</option>
+                            <option value="X-Tudo">X-Tudo</option>
+                            <option value="Hamburguer">Hamburguer</option>
+                            <option value="Batata Frita">Batata Frita</option>
+                            <option value="Refrigerante">Refrigerante</option>
+                            <option value="Pizza">Pizza</option>
+                        </select>
+                    </td>
+                    <td><input onblur="subtotal(qtd2.id, preco2.id, subtotal2.id)" type="number" min="0" id="qtd2" value=""></td>
+                    <td><input onblur="subtotal(qtd2.id, preco2.id, subtotal2.id)" type="number" min="0" id="preco2" value=""></td>
+        
+                    <td><input type="number" disabled id="subtotal2"></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>
+                        <select name="comida">
+                            <option value=""></option>
+                            <option value="Cachorro Quente">Cachorro Quente</option>
+                            <option value="X-Tudo">X-Tudo</option>
+                            <option value="Hamburguer">Hamburguer</option>
+                            <option value="Batata Frita">Batata Frita</option>
+                            <option value="Refrigerante">Refrigerante</option>
+                            <option value="Pizza">Pizza</option>
+                        </select>
+                    </td>
+                    <td><input onblur="subtotal(qtd3.id, preco3.id, subtotal3.id)" type="number" min="0" id="qtd3" value=""></td>
+                    <td><input onblur="subtotal(qtd3.id, preco3.id, subtotal3.id)" type="number" min="0" id="preco3" value=""></td>
+        
+                    <td><input type="number" disabled id="subtotal3"></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>
+                        <select name="comida">
+                            <option value=""></option>
+                            <option value="Cachorro Quente">Cachorro Quente</option>
+                            <option value="X-Tudo">X-Tudo</option>
+                            <option value="Hamburguer">Hamburguer</option>
+                            <option value="Batata Frita">Batata Frita</option>
+                            <option value="Refrigerante">Refrigerante</option>
+                            <option value="Pizza">Pizza</option>
+                        </select>
+                    </td>
+                    <td><input onblur="subtotal(qtd4.id, preco4.id, subtotal4.id)" type="number" min="0" id="qtd4" value=""></td>
+                    <td><input onblur="subtotal(qtd4.id, preco4.id, subtotal4.id)" type="number" min="0" id="preco4" value=""></td>
+        
+                    <td><input type="number" disabled id="subtotal4"></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>
+                        <select name="comida">
+                            <option value=""></option>
+                            <option value="Cachorro Quente">Cachorro Quente</option>
+                            <option value="X-Tudo">X-Tudo</option>
+                            <option value="Hamburguer">Hamburguer</option>
+                            <option value="Batata Frita">Batata Frita</option>
+                            <option value="Refrigerante">Refrigerante</option>
+                            <option value="Pizza">Pizza</option>
+                        </select>
+                    </td>
+                    <td><input onblur="subtotal(qtd5.id, preco5.id, subtotal5.id)" type="number" min="0" id="qtd5" value=""></td>
+                    <td><input onblur="subtotal(qtd5.id, preco5.id, subtotal5.id)" type="number" min="0" id="preco5" value=""></td>
+        
+                    <td><input type="number" disabled id="subtotal5"></td>
+                </tr>
+        </table>
+        <p id="total">TOTAL R$ </p>
+        <hr>
+        <input type="button" onclick="total()" value="Cacular Total">
+        <input type="reset" onclick="limpar()" value="Limpar Comanda">
+    </form>
+</body>
+</html>
